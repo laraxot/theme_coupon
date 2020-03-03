@@ -1,1 +1,357 @@
-iniziamo da qui
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:url" content="https://www.offerta.in" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Offerta In" />
+		<meta property="og:description" content="Offerta In" />
+		<meta property="og:image" content="{{ Theme::asset('pub_theme::assets/img/favicon-icon.png') }}" />
+		<meta property="og:image:width" content="321" />
+		<meta property="og:image:height" content="321" />
+		<meta property="fb:app_id" content="1887443164834793" />
+		<title>Offerta In</title>
+		<meta name="csrf-token" content="q3uJD6kxxd5x5baqQGEB3kH2xT3kAjnHRA9mNxzk" />
+		<link rel="stylesheet" href="{{ Theme::asset('pub_theme::assets/tether/tether.min.css') }}">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<link rel="apple-touch-icon" sizes="57x57" href="{{ Theme::asset('pub_theme::assets/favicon/apple-icon-57x57.png') }}">
+		<link rel="apple-touch-icon" sizes="60x60" href="{{ Theme::asset('pub_theme::assets/favicon/apple-icon-60x60.png') }}">
+		<link rel="apple-touch-icon" sizes="72x72" href="{{ Theme::asset('pub_theme::assets/favicon/apple-icon-72x72.png') }}">
+		<link rel="apple-touch-icon" sizes="76x76" href="{{ Theme::asset('pub_theme::assets/favicon/apple-icon-76x76.png') }}">
+		<link rel="apple-touch-icon" sizes="114x114" href="{{ Theme::asset('pub_theme::assets/favicon/apple-icon-114x114.png') }}">
+		<link rel="apple-touch-icon" sizes="120x120" href="{{ Theme::asset('pub_theme::assets/favicon/apple-icon-120x120.png') }}">
+		<link rel="apple-touch-icon" sizes="144x144" href="{{ Theme::asset('pub_theme::assets/favicon/apple-icon-144x144.png') }}">
+		<link rel="apple-touch-icon" sizes="152x152" href="{{ Theme::asset('pub_theme::assets/favicon/apple-icon-152x152.png') }}">
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ Theme::asset('pub_theme::assets/favicon/apple-icon-180x180.png') }}">
+		<link rel="icon" type="image/png" sizes="192x192"  href="{{ Theme::asset('pub_theme::assets/favicon/android-icon-192x192.png') }}">
+		<link rel="icon" type="image/png" sizes="32x32" href="{{ Theme::asset('pub_theme::assets/favicon/favicon-32x32.png') }}">
+		<link rel="icon" type="image/png" sizes="96x96" href="{{ Theme::asset('pub_theme::assets/favicon/favicon-96x96.png') }}">
+		<link rel="icon" type="image/png" sizes="16x16" href="{{ Theme::asset('pub_theme::assets/favicon/favicon-16x16.png') }}">
+		<link rel="manifest" href="{{ Theme::asset('pub_theme::assets/favicon/manifest.json') }}">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="{{ Theme::asset('pub_theme::assets/favicon/ms-icon-144x144.png') }}">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" type="text/css" href="{{ Theme::asset('pub_theme::assets/css/font-awesome.min.css') }}"/>
+		<link href="{{ Theme::asset('pub_theme::assets/css/bootstrap.min.css') }}" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="{{ Theme::asset('pub_theme::assets/css/animate.css') }}"/>
+		<link href="{{ Theme::asset('pub_theme::assets/css/style.css') }}" rel="stylesheet">
+		<link href="{{ Theme::asset('pub_theme::assets/css/offertain.css') }}" rel="stylesheet">
+		<link href="{{ Theme::asset('pub_theme::assets/css/search_bar.css') }}" rel="stylesheet">
+		<link href="{{ Theme::asset('pub_theme::assets/css/jquery-ui.css') }}" rel="stylesheet">
+		<link href="{{ Theme::asset('pub_theme::assets/css/jquery.ui.autocomplete.css') }}" rel="stylesheet">
+		<link rel="stylesheet" href="{{ Theme::asset('pub_theme::plugins/jcrop/jquery.Jcrop.css') }}"/>
+		<link rel="stylesheet" href="{{ Theme::asset('pub_theme::plugins/starrr/starrr.css') }}"/>
+		<link href="{{ Theme::asset('pub_theme::assets/css/full-slider.css') }}" rel="stylesheet">
+	</head>
+	<body>
+		<section>
+			<header>
+				<div class="header-top">
+					<div class="container">
+						<nav class="navbar navbar-toggleable-md navbar-light">
+							<div class="mobile_view">
+								<div class="cashback_section-wrap my-2 my-lg-0">
+									<!-- memù in modalità smartphone -->
+									<nav id='cssmenu'>
+										<!-- <div id="head-mobile"></div> -->
+                                        <a href="login.html" class="back_button invisible" style="margin-right:25px;">
+                                            <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                                        </a>
+									</nav>
+									<a class="navbar-brand wow fadeIn" href="index.html" alt="logo Offerta In">
+                                        <img src="{{ Theme::asset('pub_theme::assets/img/logo.png') }}">
+                                    </a>
+									<div class="heradre_right_mobiles">
+										<a href="login.html" class="signup-signin">
+										<img src="{{ Theme::asset('pub_theme::assets/img/header-top-user-icon.png') }}">
+										<span> Sign in Sign up </span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<a class="navbar-brand wow fadeIn" href="index.html"><img src="{{ Theme::asset('pub_theme::assets/img/logo.png') }}"></a>
+							<div class="header-search-bar nav-down m-l-50 wow fadeIn">
+								<form class="form-inline head_sform w-100" method="get" action="offers.html" id="search_form">
+									<div class="header-form-wrap">
+										<div class="row">
+											<div class="w-100">
+												<div class="input-group">
+													<div class="input-group-btn search-panel">
+														<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+														<span id="search_concept">Tutte le categorie</span>
+														</button>
+														<ul class="dropdown-menu text-left" role="menu">
+															<li><a id="all" href="https://www.offerta.in/0" style="display:none;">Tutte le categorie</a></li>
+															<li><a href="https://www.offerta.in/1">Ristoranti e Bar</a></li>
+															<li><a href="https://www.offerta.in/2">Salute e Benessere</a></li>
+															<li><a href="https://www.offerta.in/3">Sport e Tempo Libero</a></li>
+															<li><a href="https://www.offerta.in/4">Intrattenimento ed Eventi</a></li>
+															<li><a href="https://www.offerta.in/5">Servizi</a></li>
+															<li><a href="https://www.offerta.in/6">Computer e Tecnologia</a></li>
+															<li><a href="https://www.offerta.in/7">Casa e Arredamento</a></li>
+															<li><a href="https://www.offerta.in/8">Shopping e Idee Regalo</a></li>
+															<li><a href="https://www.offerta.in/9">Viaggi</a></li>
+															<li><a href="https://www.offerta.in/10">Auto e Motori</a></li>
+															<li><a href="https://www.offerta.in/11">Moda e Abbigliamento</a></li>
+															<li><a href="https://www.offerta.in/12">Giochi e Svago</a></li>
+															<li><a href="https://www.offerta.in/13">Sconti</a></li>
+														</ul>
+													</div>
+													<input type="hidden" name="search_param" value="0" id="search_param">
+													<input type="text" class="form-control mr-sm-2" name="testo" placeholder="Cerca..." maxlength="50">
+													<span class="input-group-btn">
+													<button class="btn btn-default" type="button" id="search_submit"><i class="fa fa-search"></i></span></button>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+								<div class="cashback_section-wrap my-2 my-lg-0">
+									<a href="login.html" class="signup-signin">
+									<img src="{{ Theme::asset('pub_theme::assets/img/header-top-user-icon.png') }}"> Sign in / Sign up
+									</a>
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</header>
+		</section>
+		<section>
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-keyboard="false" data-wrap="true" data-interval="8000">
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active" style="background-image: url(assets/images/ristorante.jpg);">
+						<div class="patina">
+							<div class="col-md-8 offset-md-2 text-center welcomepage">
+								<p class="text-white welcometitle" style="word-wrap:break-word;"><strong>OFFERTA.IN</strong></p>
+								<p class="text-white welcomesubtitle" style=" word-wrap:break-word;">Dai più valore ai tuoi acquisti</p>
+								<div class="mb-3">
+									<a class="btn btn-primary welcomebtn" href="login.html">Entra o Registrati</a><br><br>
+									<a class="btn btn-primary welcomebtn" href="infonr.html">Come funziona</a><br><br>
+									<a class="btn btn-primary welcomebtn" href="riscatto-codice.html">Riscatta un codice</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item" style="background-image: url(assets/images/negozio.jpg)">
+						<div class="patina">
+							<div class="col-md-8 offset-md-2 text-center welcomepage">
+								<p class="text-white welcometitle" style="word-wrap:break-word;"><strong>#CASHBACK</strong></p>
+								<p class="text-white welcomesubtitle" style=" word-wrap:break-word;">Ad ogni acquisto</p>
+								<div class="mb-3">
+									<a class="btn btn-primary welcomebtn" href="info_cashback.html">Cosa è il Cashback</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item" style="background-image: url(assets/images/coupon.jpg)">
+						<div class="patina">
+							<div class="col-md-8 offset-md-2 text-center welcomepage">
+								<p class="text-white welcometitle" style="word-wrap:break-word;"><strong>#COUPON</strong></p>
+								<p class="text-white welcomesubtitle" style=" word-wrap:break-word;">Offerte e Sconti dai tuoi negozi preferiti</p>
+								<div class="mb-3">
+									<a class="btn btn-primary welcomebtn" href="info_coupon.html">Cosa sono i Coupon</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item" style="background-image: url(assets/images/monete.jpg)">
+						<div class="patina">
+							<div class="col-md-8 offset-md-2 text-center welcomepage">
+								<p class="text-white welcometitle" style="word-wrap:break-word;"><strong>RICARICA CASHBACK</strong></p>
+								<p class="text-white welcomesubtitle" style=" word-wrap:break-word;">Hai un codice #RICARICA ?</p>
+								<div class="mb-3">
+									<a class="btn btn-primary welcomebtn" href="riscatto-codice.html">Clicca Qui</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="footer-wrap wow fadeIn">
+				<div class="container">
+					<div class="copy-right">
+						<p style="font-size:0.9em;">OFFERTA.in Srls - P.Iva 01736500099 - <a href="privacy.html">Privacy & Cookies</a> - <a href="terminiecondizioni.html">Termini e condizioni d'uso</a> - <a href='mailto:info@offerta.in' style="color:white">Email: info@offerta.in</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="{{ Theme::asset('pub_theme::assets/js/jquery-3.4.1.min.js') }}"></script>
+		<script src="{{ Theme::asset('pub_theme::assets/js/tether.min.js') }}"></script>
+		<script src="{{ Theme::asset('pub_theme::assets/js/bootstrap.min.js') }}"></script>
+		<script type="text/javascript" src="{{ Theme::asset('pub_theme::assets/js/wow.min.js') }}"></script>
+		<script src="{{ Theme::asset('pub_theme::assets/js/sweetalert2.js') }}"></script>
+		<script type="text/javascript">
+			new WOW().init();
+		</script>
+		<script>
+			function controllaSceltaCategoria(){
+			  if($('#search_param').val() > 0){
+			    $('#all').show();
+			  }else{
+			    $('#all').hide();
+			  }
+			}
+
+			$(document).ready(function(e){
+
+			              $('.search-panel .dropdown-menu').find('a').click(function(e) {
+			    e.preventDefault();
+			    var param = $(this).attr("href").replace("#","");
+			    var concept = $(this).html();
+			    $('.search-panel span#search_concept').html(concept);
+			    $('.input-group #search_param').val(param).trigger('change');
+
+			    controllaSceltaCategoria();
+			  });
+
+			  controllaSceltaCategoria();
+
+			  $('#search_submit').click(function(){
+			    $('#search_form').submit();
+			  });
+
+			  $("#search_param").change(function() {
+			                $('#search_form').submit();
+
+			  });
+
+
+
+
+
+			})
+		</script>
+		<script>
+			// alert("c'è");
+
+			swal({
+			// title: 'GDPR',
+			// type: 'info',
+			html:
+			  '<div class="text-justify mb-3" style="line-height: 1;">Utilizziamo i cookies per migliorare la navigazione. Alcuni cookies sono necessari, altri sono facoltativi. Seleziona consapevolmente le tue preferenze (dettagli cliccando il punto interrogativo) e conferma con il tasto OK.</div>' +
+
+			  '<form method="POST" action="https://www.offerta.in/gdpr" accept-charset="UTF-8" class="form" id="consent"><input name="_token" type="hidden" value="q3uJD6kxxd5x5baqQGEB3kH2xT3kAjnHRA9mNxzk">'+
+			  // '<input type="hidden" name="previusUrl" value="/"/>'+
+			  '<input type="hidden" name="_token" value="q3uJD6kxxd5x5baqQGEB3kH2xT3kAjnHRA9mNxzk">'+
+			   "<input id='checkInfo' type='checkbox' name='necessario' value='necessario' checked disabled>Consento l'utilizzo dei cookie necessari <button type='button' class='btn btn-primary btn-sm' data-toggle='collapse' data-target='#cookieInfo'>?</button><br><br>"+
+			   "<div id='cookieInfo' class='collapse mb-5 text-justify' style='line-height: 1;'><div class='text-center'><img src='assets/img/split-line.png'></div>Utilizziamo pochi cookies strettamente necessari al corretto funzionamento del sito. Uno riguarda le preferenze che esprimerai in questa fase. Il cookie eviterà che il popup ti venga riproposto ad ogni pagina. Un altro riguarda la connessione di un utente ad un altro utente ed è il fondamento del nostro sistema di passaparola. Una parte di cashback viene attribuita all'utente sponsor. Puoi approfondire questi concetti nell'apposita sezione 'cashback'. Un altro cookie rappresenta un ID sessione univoco che viene generato automaticamente dal sistema e sparisce al termine della sessione stessa.<br><div class='text-center'><img src='assets/img/split-line.png'></div></div>"+
+
+
+			   "<input id='checkStat' type='checkbox' name='stat' value='stat' checked>Consento l'utilizzo del servizio di statistica <button type='button' class='btn btn-primary btn-sm' data-toggle='collapse' data-target='#statInfo'>?</button><br><br>"+
+			   "<div id='statInfo' class='collapse mb-5 text-justify' style='line-height: 1;'><div class='text-center'><img src='assets/img/split-line.png'></div>Utilizziamo come moltissimi altri siti web i cookies di google analytics per analizzare in modo completamente anonimo il traffico ed elaborare dati statistici che ci consentono di migliorare il servizio.<br><div class='text-center'><img src='assets/img/split-line.png'></div></div>"+
+
+
+			   "<input id='checkMark' type='checkbox' name='marketing' value='marketing'>Consento l'utilizzo del servizio di marketing <button type='button' class='btn btn-primary btn-sm' data-toggle='collapse' data-target='#markInfo'>?</button><br><br>"+
+			   "<div id='markInfo' class='collapse mb-5 text-justify' style='line-height: 1;'><div class='text-center'><img src='assets/img/split-line.png'></div>Al fine di proporti solo offerte in linea con le tue preferenze, potremmo utilizzare cookies specifici che memorizzano i tuoi dati di navigazione.<br><div class='text-center'><img src='assets/img/split-line.png'></div></div>"+
+			   // "<meta name='_token' content='q3uJD6kxxd5x5baqQGEB3kH2xT3kAjnHRA9mNxzk' />"+
+
+			  '</form>'
+			  ,
+
+			showCloseButton: false,
+			showCancelButton: false,
+			confirmButtonClass: 'btn btn-primary',
+			confirmButtonColor: '#3b5998',
+			confirmButtonText: 'Ok',
+			allowOutsideClick: 	false,
+			focusConfirm: false,
+			}).then((result) => {
+			if (result.value) {
+
+			    $.ajaxSetup({
+			         headers: {
+			            'X-CSRF-TOKEN': $('input[name="_token"]').attr('value')
+			         }
+			        });
+			    $.ajax({
+			            url : "https://www.offerta.in/gdpr",
+			            type : "post",
+			            data : {
+			                    info: $('#checkInfo').is(':checked'),
+			                    stat: $('#checkStat').is(':checked'),
+			                    mark: $('#checkMark').is(':checked'),
+			                 },
+			            dataType: 'json',
+			            // success : function () {
+			            //     alert('ok');
+			            // // success : function (data,stato) {
+			            //     // $("#risultati").html(data);
+			            //     // $("#statoChiamata").text(stato);
+			            // },
+			            // error : function (richiesta,stato,errori) {
+			            //     alert("E' evvenuto un errore. Il stato della chiamata: "+stato);
+			            // }
+			        });
+			}
+			})
+
+
+
+
+
+
+
+
+
+			// $('#consent').submit()
+			// alert($('#checkStat').is(":checked"));
+
+			// Cookies.set('statConsent', 'ok');
+
+			// if($('#checkInfo').is(':checked')){
+			//   // alert($('#checkStat').val());
+			//   var cookie = 'si';
+			// }else{
+			//   var cookie = 'no';
+			// }
+			//
+			// if($('#checkStat').is(':checked')){
+			//   // alert($('#checkStat').val());
+			//   var cookie = 'si';
+			// }else{
+			//   var cookie = 'no';
+			// }
+			//
+			// if($('#checkMark').is(':checked')){
+			//   // alert($('#checkStat').val());
+			//   var cookie = 'si';
+			// }else{
+			//   var cookie = 'no';
+			// }
+
+
+
+
+
+			// var formData = $('#consent').serialize();
+			// $.ajaxSetup({
+			//      headers: {
+			//          // 'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+			//          'X-CSRF-TOKEN': $('input[name="_token"]').attr('value')
+			//      }
+			//     });
+			// $.ajax({
+			//         url : "https://www.offerta.in/gdpr",
+			//         type : "post",
+			//         // data : formData,
+			//         dataType: 'json',
+			//         success : function () {
+			//             alert('ok');
+			//         // success : function (data,stato) {
+			//             // $("#risultati").html(data);
+			//             // $("#statoChiamata").text(stato);
+			//         },
+			//         error : function (richiesta,stato,errori) {
+			//             alert("E' evvenuto un errore. Il stato della chiamata: "+stato);
+			//         }
+			//     });
+		</script>
+		<script src="{{ Theme::asset('pub_theme::assets/js/bundle/bootstrap.bundle.min.js') }}"></script>
+	</body>
+</html>

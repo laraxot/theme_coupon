@@ -1,0 +1,64 @@
+.product-title-subtitle, .product-location-name, .product-subtitle{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.product-subtitle {float: none;}
+.btn-primary {color: #fff;background-color: #3b5998;border-color: #3b5998;}
+.btn-primary:hover {color: #fff;background-color: #f26522;border-color: #f26522;}
+
+/* pannello di controllo */
+#cssmenu > ul > li > ul > li > a{font-weight: 700; font-size: 14px;}
+#cssmenu > ul > li > ul > li > ul > li > a{font-weight: 700; font-size: 14px;}
+#cssmenu > ul > li > ul > li > ul > li{right: 200%;}
+
+/* popup */
+.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:hover {color: #fff !important;background-color: #f26522 !important;border-color: #f26522 !important;}
+
+/* barra categoria */
+.header-main-menu{background-color: #3b5998;}
+.catagories{width: 100%;}
+.cat-wrap{float: none;display: inline-block;}
+.cat-wrap:hover{background-color: #f26522;}
+
+/* footer */
+.copy-right a {color: white;}
+
+/* welcome page */
+/* @media (min-width: 700px){
+    .welcometitle{font-size: 5em;}
+    .welcomesubtitle{font-size: 2.5em;}
+    .welcomebtn{font-size: 1.3em;}
+}
+@media (max-width: 700px){
+    .welcometitle{font-size: 3em;}
+    .welcomesubtitle{font-size: 1.7em;}
+    .welcomebtn{font-size: 1.3em;}
+} */
+@media (max-width: 566px){
+    .welcomepage{margin-top:30%; }
+    .welcometitle{font-size: 2.5em;}
+    .welcomesubtitle{font-size: 1.5em;}
+    .welcomebtn{font-size: 1em;}
+}
+@media (min-width: 566px){
+    .welcomepage{margin-top:9%;}
+    .welcometitle{font-size: 2.5em;}
+    .welcomesubtitle{font-size: 1.5em;}
+    .welcomebtn{font-size: 1em;}
+}
+@media (min-width: 768px){
+    .welcomepage{margin-top:20%;}
+    .welcometitle{font-size: 3em;}
+    .welcomesubtitle{font-size: 2em;}
+    .welcomebtn{font-size: 1.3em;}
+}
+@media (min-width: 992px){
+    .welcomepage{margin-top:15%;}
+    .welcometitle{font-size: 5em;}
+    .welcomesubtitle{font-size: 2.7em;}
+    .welcomebtn{font-size: 1.5em;}
+}
+
+
+.patina {
+    background-color: rgba(0, 0, 0, 0.3);
+    width:100%;
+    height:100%;
+}

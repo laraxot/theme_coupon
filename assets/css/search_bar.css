@@ -1,0 +1,87 @@
+.header-form-wrap {
+  width: 100%;
+}
+
+#search_form ul li a, #search_concept {
+  color: #292b2c;
+  letter-spacing: 0px;
+  word-spacing: 1px;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: small;
+}
+
+
+
+
+#search_form ul li {
+  background:#d6d6d6;
+  line-height: 190%;
+}
+
+#search_submit {
+  top: 0px;
+}
+
+
+#search_submit i {
+  color: #333;
+}
+
+.search-panel button {
+  background:#d6d6d6;
+  margin : 0px;
+  border : 0px;
+  padding : 0px;
+  letter-spacing: -1px;
+  word-spacing: 1px;
+  top: 0px;
+  border-radius: 5px 0 0 5px;
+}
+
+#search_form input[type="text"] {
+  border : 0px;
+}
+
+
+.head_sform button {
+  color: #292b2c;
+  cursor: pointer;
+}
+
+#search_form ul {
+  margin : 0px;
+  border : 0px;
+  padding : 0px;
+}
+
+.form-inline .form-control {
+  width: 100%;
+}
+
+
+
+.signup-signin {
+    margin-right: 0px;
+}
+
+
+@media all and (min-width:1200px){
+  .header-search-bar > .cashback_section-wrap {
+      width: 39%;
+  }
+
+}
+
+@media all and (max-width:1199px){
+  .header-search-bar > .cashback_section-wrap {
+      width: 53%;
+  }
+}
+
+@media all and (max-width:767px){
+  .header-search-bar > .cashback_section-wrap {
+      width: 53%;
+  }
+}
